@@ -64,6 +64,12 @@ body {
 
 #arrow:hover {
     top: .75rem;
+    border: solid #ECB390;
+    border-width: 0 .75rem .75rem 0;
+    display: inline-block;
+    padding: .75rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 section {
