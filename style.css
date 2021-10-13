@@ -56,9 +56,22 @@ body {
     color: #D4E2D4;
 }
 
-button {
-
+#arrow {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5;
+    border: solid #DF7861;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
+
+#arrow:hover {
+    top: 5px;
+}
+
 section {
     display: flex;
     flex-direction: column;
