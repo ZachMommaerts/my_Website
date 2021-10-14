@@ -14,7 +14,6 @@ body {
 }
 
 section {
-    display: flex;
     width: 100%;
     height: 100vh;
 }
@@ -50,10 +49,6 @@ section {
 
 .navbar ul li a:hover {
     color: #DF7861;
-}
-
-.code {
-    color: #D4E2D4;
 }
 
 #arrow {
@@ -96,38 +91,37 @@ section p {
     font-size: 1.5rem;
 }
 
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 #pictureContainer {
     display: flex;
-    position: relative;
-    background-color: #ECB390;
+    background-color: #D4E2D4;
     overflow: hidden;
     z-index: -1;
-    height: 15em;
-    width: 15em;
+    height: 20em;
+    width: 20em;
     border-radius: 50%;
-    margin: 7.5em;
+    margin-top: 5em;
 }
 
 #picture {
     object-fit: cover;
     margin: auto;
     border-radius: 50%;
-    height: 14em;
-    width: 14em;
+    height: 18em;
+    width: 18em;
 }
 
 #about h1 {
-    position: relative;
-    padding-left: .5em;
-    top: -1.5em;
     font-size: 5em;
+    margin-left: .85em;
 }
 
 #aboutMeList {
-    position: relative;
-    top: 5em;
     font-size: 1.5em;
-    padding-right: .5em;
     line-height: 1.5;
 }
 
@@ -137,12 +131,16 @@ section p {
 
 .column {
     flex: 1;
+    justify-self: center;
+    align-self: center;
 }
 
-#leftColumn {
-    
+#rightColumn {
+    border: .5em solid #DF7861;
+    border-color: #DF7861;
+    border-radius: 0 15% 15% 0;
+    border-left: none;
 }
-
 /*
 yellow - ffc857
 blueish - 407076
