@@ -32,7 +32,7 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 2.5rem;
+    margin: 0 2rem;
     padding: 1rem;
 }
 
@@ -40,6 +40,7 @@ body {
     font-size: 1em;
     text-decoration: none;
     color: white;
+    transition: 0.25s;
 }
 
 .navbar ul li a:hover {
@@ -54,25 +55,25 @@ body {
     position: relative;
     top: 0;
     border: solid #DF7861;
-    border-width: 0 .75rem .75rem 0;
+    border-width: 0 .6rem .6rem 0;
     display: inline-block;
-    padding: .75rem;
+    padding: .6rem;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transition: 1s;
 }
 
 #arrow:hover {
-    top: .75rem;
+    top: .6rem;
     border: solid #ECB390;
-    border-width: 0 .75rem .75rem 0;
+    border-width: 0 .6rem .6rem 0;
     display: inline-block;
-    padding: .75rem;
+    padding: .6rem;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
-section {
+#home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,6 +89,39 @@ section h1 {
 
 section p {
     font-size: 1.5rem;
+}
+
+#picture {
+    position: relative;
+    background-color: #ECB390;
+    z-index: -1;
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+    margin: 7.5em;
+    padding: 0;
+}
+
+#about {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#about h1 {
+    position: relative;
+    padding-left: .5em;
+    top: -1.5em;
+}
+
+#about p {
+    position: relative;
+    float: right;
+    top: 5em;
+}
+
+.column {
+    width: 50%;
 }
 /*
 yellow - ffc857
