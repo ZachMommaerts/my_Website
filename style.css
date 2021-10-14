@@ -11,7 +11,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background:#FCF8E8;
     color: #DF7861;
-    line-height: 1.6;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
 }
 
 .navbar {
@@ -112,17 +116,26 @@ section p {
     position: relative;
     padding-left: .5em;
     top: -1.5em;
+    font-size: 5em;
 }
 
-#about p {
+#aboutMeList {
     position: relative;
     float: right;
     top: 5em;
+    font-size: 1.5em;
+    padding-right: .5em;
+    line-height: 1.5;
+}
+
+#aboutMeList li {
+    padding: 1.5rem;
 }
 
 .column {
     width: 50%;
 }
+
 /*
 yellow - ffc857
 blueish - 407076
