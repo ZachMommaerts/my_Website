@@ -14,6 +14,7 @@ body {
 }
 
 section {
+    display: flex;
     width: 100%;
     height: 100vh;
 }
@@ -95,21 +96,24 @@ section p {
     font-size: 1.5rem;
 }
 
-#picture {
+#pictureContainer {
+    display: flex;
     position: relative;
     background-color: #ECB390;
+    overflow: hidden;
     z-index: -1;
     height: 15em;
     width: 15em;
     border-radius: 50%;
     margin: 7.5em;
-    padding: 0;
 }
 
-#about {
-    display: flex;
-    width: 100%;
-    height: 100vh;
+#picture {
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    height: 14em;
+    width: 14em;
 }
 
 #about h1 {
@@ -121,7 +125,6 @@ section p {
 
 #aboutMeList {
     position: relative;
-    float: right;
     top: 5em;
     font-size: 1.5em;
     padding-right: .5em;
@@ -133,7 +136,7 @@ section p {
 }
 
 .column {
-    width: 50%;
+    flex: 1;
 }
 
 #leftColumn {
